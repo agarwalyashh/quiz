@@ -1,8 +1,7 @@
-# React + Vite
+# React Quiz Practise Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project consists of 15 questions based on React concepts which were uploaded in a json file and then fetched using a fake-api server created by npm json-server package and then 
+fetched using useEffect hook in React.
+Using the concepts of useReducer hook, this project dealt with managing different states required for the proper functioning of the App.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app was broken down into several Components, which form the building blocks of React. The entire styling in the application was done using Tailwind CSS.
