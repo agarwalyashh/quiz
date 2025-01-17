@@ -1,0 +1,19 @@
+const [state,dispatch] = useReducer(reducer,initialState)
+Here, initialState are generally objects like {count:0,step:1}, which needs to be destructured. Because with single values, 
+useState is used.
+
+function reducer(state,action) // Pure function, which return next updated state
+{
+    // state is the current state, action is the updating state step, how to update state
+    if(action.type==x) 
+    return {...state,count:state.count+action.payload(or state.step)} 
+
+    generally we use switch statements here
+}
+
+dispatch({type: x,payload:y}) - this is used instead of callback function inside useState, used for updating state
+Here, type is used to give this particular dispatch or state update functionality a name and payload is the action to be performed.
+This dispatch function is basically the action to be performed by the reducer function or in other words the state update code which
+uses the prev state value and calls the reducer function with the action specified to update state
+
+Payload is optional 
